@@ -2,7 +2,7 @@ class CombinedCounter extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    const title = this.getAttribute("title") || "Coke";
+    const title = this.getAttribute("title") || "Coke Zero";
     const value = parseInt(this.getAttribute("value")) || 0;
 
     this.shadowRoot.innerHTML = `
@@ -35,3 +35,4 @@ class CombinedCounter extends HTMLElement {
 }
 
 customElements.define("combined-counter", CombinedCounter);
+
