@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Counter Components Demo</title>
-    <script src="counter-display.js"></script>
+    <script src="counter-display.js" defer></script>
     <script src="counter-controls.js"></script>
     <script src="combined-counter.js" defer></script>
     <script src="NamaDanNIM.js"></script>
@@ -70,6 +70,11 @@
 
   <body>
     <nama-dan-nim nama="SATYA WIRA PRAMUDITA" nim="24/543649/PA/23102"></nama-dan-nim>
+
+    <!-- Komponen 1 -->
+    <counter-display title="Lorem Ipsum Title" value="99"></counter-display>
+    <!-- Komponen 2 -->
+    <counter-controls id="controls"></counter-controls>
 
     <div class="counter-grid">
       <combined-counter title="Pemain 1" value="0"></combined-counter>
